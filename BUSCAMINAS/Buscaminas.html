@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Buscaminas Pesadilla</title>
+<link rel="stylesheet" href="style.css">
+<link href="images.png" rel="icon"  type="image/png">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png">Busca
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png">minas 
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png">
+
+</center> </h1>
+
+<select id="level">
+<option value="easy">Fácil</option>
+<option value="normal" selected>Normal</option>
+<option value="hard">Difícil</option>
+</select>
+
+<div id="panel">
+💣 <span id="mines">0</span>
+🚩 <span id="flags">0</span>
+👆 <span id="clicks">0</span>
+🏆 <span id="wins">0</span>
+💀 <span id="losses">0</span>
+</div>
+
+<div id="game"></div>
+
+<div class="buttons">
+<button id="restart">Reiniciar</button>
+<button id="musicBtn">🔇 Música</button>
+</div>
+
+</div>
+
+<!-- GAME OVER -->
+<div id="overlay" class="hidden">
+<div id="ghostText">
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png">
+<span>GAME</span>
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png">
+<span>OVER</span>
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png">
+</div>
+
+<p id="gengarPhrase"></p>
+<button id="playAgain">Jugar otra vez</button>
+</div>
+
+<!-- sonidos -->
+<audio id="bgMusic" loop>
+<source src="musicadefondo.mp3">
+</audio>
+
+<audio id="boomSound">
+<source src="bomba.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
